@@ -124,9 +124,20 @@ A **Random Forest ensemble** reliably predicted **beer ABV** from sensory and st
 
 ## How to Run
 
-### Requirements
-```bash
-pip install numpy pandas matplotlib seaborn scipy scikit-learn jupyter
+Tested on Python 3.13.
 
-Start Jupyter Notebook from the project root (the folder that contains beer_profile_and_ratings.csv).
-Open and run: notebooks/Spalding_DSC630_FinalCode.ipynb
+```bash
+pip install -r requirements.txt
+jupyter notebook notebooks/beer_strength_prediction.ipynb
+```
+
+Run all cells. The notebook finds `beer_profile_and_ratings.csv` in the `data/`
+folder and runs end to end in about a minute and a half with no errors.
+
+## Repository Contents
+
+```
+data/beer_profile_and_ratings.csv          Beer profiles and ratings dataset
+notebooks/beer_strength_prediction.ipynb   Full analysis
+requirements.txt                           Python dependencies
+```
